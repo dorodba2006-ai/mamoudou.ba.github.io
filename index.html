@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Étudiant en Génie Civil</title>
+  <meta name="description" content="Portfolio d'un étudiant en génie civil : projets, compétences et parcours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family= rlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#accueil" class="logo">BA</a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact" class="btn-nav">Me contacter</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+      <div class="hero-text">
+        <p class="tag">Étudiant en 1<sup>re</sup> année, cycle préparatoire</p>
+        <h1>Je construis mon avenir en génie civil.</h1>
+        <p class="lead">Passionné par les ouvrages d'art, les structures et la construction durable. Voici mes projets, mes outils et mon parcours.</p>
+        <div class="actions">
+          <a href="#projets" class="btn primary">Voir mes projets</a>
+          <a href="cv.pdf" class="btn ghost" download>Télécharger mon CV</a>
+        </div>
+      </div>
+      <figure class="hero-draw" aria-label="Dessin animé d'un pont à poutre treillis">
+        <svg viewBox="0 0 580 260" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path class="d" d="M20 230H560"/>
+          <path class="d" d="M40 170V230M520 170V230"/>
+          <path class="d" d="M40 170H520"/>
+          <path class="d" d="M100 90H460"/>
+          <path class="d t" d="M40 170L100 90L160 170L220 90L280 170L340 90L400 170L460 90L520 170"/>
+          <path class="d" d="M220 90V170M340 90V170" stroke-dasharray="4 6"/>
+        </svg>
+        <figcaption>Poutre treillis de type Warren</figcaption>
+      </figure>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+      <h2>À propos</h2>
+      <div class="about">
+        <p>Je m'appelle <strong>Mamoudou BA</strong>, étudiant en première année du cycle préparatoire en génie civil. Je m'intéresse à la résistance des matériaux, à la topographie et à la conception de structures. J'aime comprendre comment un bâtiment tient debout, et le dessiner avant de le construire.</p>
+        <ul class="stats">
+          <li><span class="num" data-to="5">0</span><small>projets réalisés</small></li>
+          <li><span class="num" data-to="4">0</span><small>logiciels maîtrisés</small></li>
+          <li><span class="num" data-to="1">0</span><small>année d'études</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section alt" id="competences">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div class="skill" data-level="80"><div class="row"><span>AutoCAD</span><b>80%</b></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="60"><div class="row"><span>Revit</span><b>60%</b></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="70"><div class="row"><span>Excel (calculs)</span><b>70%</b></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="65"><div class="row"><span>Résistance des matériaux</span><b>65%</b></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="55"><div class="row"><span>Topographie</span><b>55%</b></div><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="75"><div class="row"><span>Travail en équipe</span><b>75%</b></div><div class="bar"><i></i></div></div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+      <h2>Projets</h2>
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button class="chip active" data-f="all">Tous</button>
+        <button class="chip" data-f="conception">Conception</button>
+        <button class="chip" data-f="calcul">Calcul</button>
+        <button class="chip" data-f="terrain">Terrain</button>
+      </div>
+      <div class="grid">
+        <article class="card" data-cat="conception">
+          <div class="thumb">Plan</div>
+          <h3>Plan d'une maison R+1</h3>
+          <p>Conception des plans sur AutoCAD : étages, coupes et façades.</p>
+          <span class="meta">AutoCAD</span>
+        </article>
+        <article class="card" data-cat="calcul">
+          <div class="thumb">Calcul</div>
+          <h3>Dimensionnement d'une poutre</h3>
+          <p>Calcul des efforts et des contraintes sur une poutre isostatique.</p>
+          <span class="meta">Excel, RDM</span>
+        </article>
+        <article class="card" data-cat="conception">
+          <div class="thumb">Pont</div>
+          <h3>Maquette d'un pont</h3>
+          <p>Maquette à l'échelle d'un pont à treillis, testée en charge.</p>
+          <span class="meta">Maquette</span>
+        </article>
+        <article class="card" data-cat="terrain">
+          <div class="thumb">Levé</div>
+          <h3>Levé topographique</h3>
+          <p>Relevé d'une parcelle au niveau optique et report sur plan.</p>
+          <span class="meta">Topographie</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section alt" id="parcours">
+      <h2>Parcours</h2>
+      <ol class="timeline">
+        <li><time>2025</time><div><h3>Baccalauréat</h3><p>Filière scientifique, mention [à compléter].</p></div></li>
+        <li><time>2025 – 2026</time><div><h3>Cycle préparatoire, 1<sup>re</sup> année</h3><p>Mathématiques, physique, dessin technique, informatique.</p></div></li>
+        <li><time>2026</time><div><h3>Stage d'observation</h3><p>Visite de chantier et découverte du métier. [à compléter]</p></div></li>
+        <li><time>Objectif</time><div><h3>Cycle ingénieur en génie civil</h3><p>Spécialisation en structures ou en travaux publics.</p></div></li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Une question, une opportunité de stage ou un projet à partager ? Écris-moi.</p>
+        <form id="form">
+          <input type="text" id="name" placeholder="Mamoudou" required>
+          <input type="email" id="email" placeholder="dorodba2006@gmail.com" required>
+          <textarea id="msg" rows="4" placeholder="J'ai fait un stage d'orientation en 3e dans un bureau d'études" required></textarea>
+          <button class="btn primary" type="submit">Envoyer le message</button>
+          <p class="note" id="note" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Mamoudou. Portfolio de génie civil.</p>
+    <p><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
